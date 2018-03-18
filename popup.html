@@ -1,0 +1,35 @@
+<!--
+/*******************************************************************************
+*
+* Iframe Detector Popup HTML
+* ___________________________
+* [2018] Pericror
+* All Rights Reserved
+* Use of this source code is governed by the license found in the LICENSE file.
+********************************************************************************/
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+    <script type="text/javascript" src="popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div id="content">
+            <table id="iframes">
+            <thead><tr><td>Iframe Source Domain</td><td>Iframe Source</td></tr></thead>
+            <tbody></tbody>
+            </table>
+            <div id="noSrc">
+                <span id="iframesNoSrc"></span>
+                <button id="deleteNoSrc" class="material-icons">delete</button>
+            </div>
+            <button id="deleteAll">Delete All <span class="material-icons">delete</span></button>
+        </div>
+        <div id="loading" class="notification">Waiting for page to load...</div>
+        <div id="default" class="notification">No iframes detected!</div>
+        <div id="error" class="notification">Sorry, an error occurred retrieving iframe information on this page.</div>
+        <div id="footer">Iframe Detector powered by <a id ="siteLink" href="">Pericror</a></div>        
+    </body>
+</html>

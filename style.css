@@ -1,0 +1,179 @@
+/*******************************************************************************
+*
+* Iframe Detector Stylesheet
+* ___________________________
+* [2018] Pericror
+* All Rights Reserved
+* Use of this source code is governed by the license found in the LICENSE file.
+********************************************************************************/
+
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700';
+
+body {
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial; 
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width:620px;
+}
+
+table {
+    border-collapse:collapse;
+}
+
+thead td {
+    background-color:#00aeef;
+    font-weight:bold;
+    color:white;
+    text-align:center;
+}
+
+td {
+    padding:10px;
+    text-align:left;
+    border: 1px solid #ddd;
+    min-width:160px;
+    max-width:300px;
+    word-wrap:break-word;
+    color:black;
+}
+
+tr:nth-of-type(2n) {
+    background-color:#f2f2f2;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #00AEEF;
+}
+
+button {
+    cursor: pointer;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+td > button {
+    height: 36px;
+    width: 36px;
+}
+
+button:hover{
+    box-shadow: black 0px 0px 5px;
+}
+
+#content
+{
+    display: none;
+}
+
+#iframes
+{
+    display: none;
+    max-height: 350px;
+    overflow-y: auto;
+    margin-bottom:10px;
+}
+
+#loading
+{
+    display: block;
+    background-color: #3F51B5;
+}
+
+#default
+{
+    display: none;
+    background-color: #4CAF50;
+}
+
+#noSrc
+{
+    text-align: center;
+    min-width: 360px;
+}
+
+#iframesNoSrc
+{
+    display: inline-block;
+}
+
+#deleteNoSrc
+{
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 16px;
+    height: 30px;
+    width: 30px;
+}
+
+#deleteAll
+{
+    font-size: 24px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-weight: bold;
+    color:white;
+    width: 100%;
+}
+
+#deleteAll > span
+{
+    position: fixed;
+    font-size: 26px;
+    margin-left: 5px;
+}
+
+#error
+{
+    display: none;
+    background-color: red;
+}
+
+#footer
+{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: grey;
+}
+
+.domain
+{
+    color: white;
+    background-color: #ffc107;
+}
+
+.iframeOk
+{
+    background-color: #4caf50;
+}
+
+.iframeWarning
+{
+    background-color: #ffc107;
+}
+
+.delete
+{
+    vertical-align: middle;
+    min-width: 0px;
+}
+
+.notification
+{
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    text-align: center; 
+}
