@@ -23,10 +23,9 @@
       "default_popup": "popup.html"
    },
    "permissions": [
-   
-    "tabs","http://*/*", "https://*/*" 
+    "http://*/*", "https://*/*" 
    ],
    "update_url": "http://clients2.google.com/service/update2/crx",
-   "version": "2.0",
+   "version": "2.1",
    "homepage_url": "http://www.pericror.com/software/iframe-detector-chrome-extension/"
 }
