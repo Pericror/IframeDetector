@@ -8,7 +8,6 @@
 ********************************************************************************/
 
 function updateBadge(response) {
-    console.log('update badge tab id: '+response['tabId']);
     if(response['iframes'] > 0)
     {
         chrome.browserAction.setTitle({'title':"Iframes detected, click for more info",
@@ -17,7 +16,7 @@ function updateBadge(response) {
                                             'tabId':response['tabId']});
         chrome.browserAction.setBadgeBackgroundColor({'color':'#CA2E0B',
                                                     'tabId':response['tabId']});
-    }
+    } 
     else
     {
         chrome.browserAction.setTitle({'title':"No iframes detected",
